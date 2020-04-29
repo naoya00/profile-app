@@ -6,6 +6,9 @@
       <router-link to="/production" class="link">Production</router-link>
     </header>
     <router-view></router-view>
+    <footer>
+      
+    </footer>
   </div>
 </template>
 
