@@ -21,14 +21,14 @@
 .fade-enter-active{
   transition: opacity 1s;
 }
-.fade--enter-to{
+.fade-enter-to{
   opacity: 1;
 }
 .fade-leave{
   opacity: 1;
 }
 .fade-leave-active{
- transition: opacity 0s;
+ transition: opacity 0;
 }
 .fade-leave-to{
   opacity: 0;

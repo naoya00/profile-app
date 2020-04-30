@@ -5,7 +5,9 @@
       PortFolio<br>
       Site
     </div>
-    <img src="@/assets/profileImage.jpg" />
+    <transition enter-active-class="animated flip" appear>
+      <img src="@/assets/profileImage.jpg" />
+    </transition>
   </div>
 </template>
 
