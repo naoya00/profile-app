@@ -5,7 +5,7 @@
       PortFolio<br>
       Site
     </div>
-    <img src="@/assets/user.jpg" />
+    <img src="@/assets/profileImage.jpg" />
   </div>
 </template>
 
