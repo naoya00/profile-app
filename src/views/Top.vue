@@ -10,7 +10,7 @@
         <button @click="show = !show" class="topLow__button">push</button>
       </div>
     </div>
-    <transition enter-active-class="animated flip" leave-active-class="animated zoomOutRight" appear>
+    <transition enter-active-class="animated zoomInRight" leave-active-class="animated zoomOutRight" appear>
       <img v-if="show" src="@/assets/profileImage.jpg" />
     </transition>
   </div>
