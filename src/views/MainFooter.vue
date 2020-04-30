@@ -3,7 +3,7 @@
     <router-link to="/" class="footerLink">Top</router-link>
     <router-link to="/about" class="footerLink">About</router-link>
     <router-link to="/production" class="footerLink">Production</router-link>
-    <router-link to="/production" class="footerLink">Contact</router-link>
+    <a href="https://twitter.com/Ig6gRbnU9W8c7EB" target=”_blank” class="footerLink">Contact</a>
     <div class="footerLow__icons">
       <a href="https://twitter.com/Ig6gRbnU9W8c7EB" target=”_blank”>
         <font-awesome-icon :icon='["fab", "twitter"]' />
