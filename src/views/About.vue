@@ -26,3 +26,15 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.aboutLow{
+  width: 80%;
+  margin: 50px auto;
+  height: 70vh;
+  & h3{
+    color: #808080; 
+    font-size: 2em;
+  }
+}
+
+</style>
