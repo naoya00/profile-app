@@ -53,10 +53,16 @@ export default {
     }
   }
   &__button{
-    width: 40px;
+    width:100px;
     height: 40px;
-    margin: auto;
-    border-radius: 50%;
+    font-size:12px;
+    color:#FFFFFF;
+    text-align:center;
+    display:block;
+    padding:10px 0 10px;
+    background:#6BCBF6;
+    border-radius:5px;
+    box-shadow:1px 1px #1A6EA0;
     cursor: pointer;
     outline: none;
     background: #FFF;
