@@ -6,21 +6,17 @@
           <a class="delete is-medium" @click="clickEvent"></a>
         </div>
         <div class="contentLow__texts">
-          プログラミングスクールでチーム開発をした、フリーマーケットアプリです。
+          本サイトです。vue.jsの理解を深めるために、プロフィールページを作成しました。
           <br>
-          自分が担当した開発部分は、主に商品出品・編集機能のフロント・サーバーサイドです。
+          モーダルウィンドウや、動きのあるものをvue.jsで実装いたしました。
           <br>
           詳しくは下記のGithubのリンクからをご覧ください。
-          <br>
-          ID: admin
-          <br>
-          Pass: 2222
         </div>
         <div class="contentLow__icons">
-          <a href="http://54.64.42.195/" target=”_blank”>
+          <a href="https://seaser.netlify.app/" target=”_blank”>
             <font-awesome-icon icon="link" />
           </a>
-          <a href="https://github.com/rooreckless/freemarket_sample_71g" target="_blank">
+          <a href="https://github.com/naoya00/profile-app" target="_blank">
             <font-awesome-icon :icon='["fab", "github"]' />
           </a>
         </div>
