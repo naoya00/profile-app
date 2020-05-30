@@ -3,12 +3,12 @@
     <div class="aboutLow__careers">
       <h3>経歴</h3>
       <ul v-for="career in careers" :key="career">
-        <li>{{ career }}</li>
+        <li class="aboutLow__list">{{ career }}</li>
       </ul>
     <div class="aboutLow__technologies">
       <h3>技術</h3>
       <ul v-for="technology in technologies" :key="technology">
-        <li>{{ technology }}</li>
+        <li class="aboutLow__list">{{ technology }}</li>
       </ul>
     </div>
     </div>
@@ -34,6 +34,9 @@ export default {
   & h3{
     color: #808080; 
     font-size: 2em;
+  }
+  &__list{
+    margin:20px 0
   }
 }
 

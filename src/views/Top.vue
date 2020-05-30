@@ -7,7 +7,7 @@
       <div class="topLow__texts--swiches">
         <div v-if="show===true">Face switch off</div>
         <div v-else>Face switch on</div>
-        <button @click="show = !show" class="topLow__button">push</button>
+        <button @click="show = !show" class="button is-outlined topLow__button">push</button>
       </div>
     </div>
     <transition enter-active-class="animated zoomInRight" leave-active-class="animated zoomOutRight" appear>
@@ -53,35 +53,7 @@ export default {
     }
   }
   &__button{
-    width:100px;
-    height: 40px;
-    font-size:12px;
-    color:#FFFFFF;
-    text-align:center;
-    display:block;
-    padding:10px 0 10px;
-    background:#6BCBF6;
-    border-radius:5px;
-    box-shadow:1px 1px #1A6EA0;
-    cursor: pointer;
-    outline: none;
-    background: #FFF;
-	background: -moz-linear-gradient(top,#FFF 0%,#DDD);
-	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
-    color: #808080;
-    transition: .3s;
-    &:hover{
-      opacity: 0.7;
-      box-shadow: none;
-    }
-    &:active {
-      -webkit-transform: translateY(2px);
-      transform: translateY(2px);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-      border-bottom: none;
-    }
+    font-family: Courgette,cursive;
   }
 }
 </style>

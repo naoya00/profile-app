@@ -8,7 +8,8 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+@import "../node_modules/bulma/bulma.sass";
 .appLow{
   width: 95%;
   margin: auto;
@@ -28,7 +29,7 @@
   opacity: 1;
 }
 .fade-leave-active{
- transition: opacity 0;
+transition: opacity 0;
 }
 .fade-leave-to{
   opacity: 0;
