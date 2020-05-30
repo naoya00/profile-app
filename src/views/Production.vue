@@ -1,20 +1,26 @@
 <template>
   <div class="productionLow">
-    <a @click="openModal">
       <div class="productionLow__content">
+        <div class="productionLow__content--explanation">
+          <p>人類を救うマスク在庫検索アプリ【 Find Mask 】</p>
+          <button class="button is-link is-inverted" @click="openModal">詳しく見る</button>
+        </div>
         <img src="@/assets/findmask.jpg" />
       </div>
-    </a>
-    <a @click="furimaOpenModal">
       <div class="productionLow__content">
+        <div class="productionLow__content--explanation">
+          <p>フリーマーケットアプリ【 Furima 】</p>
+          <button class="button is-link is-inverted" @click="furimaOpenModal">詳しく見る</button>
+        </div>
         <img src="@/assets/furima.jpg" />
       </div>
-    </a>
-    <a @click="profileOpenModal">
       <div class="productionLow__content">
+        <div class="productionLow__content--explanation">
+          <p>ポートフォリオサイト【 Naoya Ishizaka 】</p>
+          <button class="button is-link is-inverted" @click="profileOpenModal">詳しく見る</button>
+        </div>
         <img src="@/assets/portforio.jpg" />
       </div>
-    </a>
     <FindMaskModal v-show="showContent" @from-child="closeModal"></FindMaskModal>
     <FurimaModal v-show="furimaShowContent" @FurimaFrom-child="furimaCloseModal"></FurimaModal>
     <ProfileModal v-show="profileShowContent" @profileFrom-child="profileCloseModal"></ProfileModal>
@@ -57,26 +63,20 @@ export default {
 .productionLow{
   width: 75%;
   margin: 50px auto 70px;
-  & a{
-    text-decoration: none;
-  }
-  & h3{
-    font-size: 2em;
-    color: #808080;
-    margin-bottom: 20px
-  }
   &__content{
     background-color:#eeeeee;
     box-shadow: 0 3px 6px black;
     padding: 25px;
-    display: flex;
     transition: 0.5s;
     margin-bottom: 50px;
-    & img{
-      margin-right: 100px;
-    }
-    &:hover{
-      opacity: 0.8;
+    &--explanation{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 25px;
+      & p{
+        font-size: 30px;
+        color: #808080;
+      }
     }
   }
 }
