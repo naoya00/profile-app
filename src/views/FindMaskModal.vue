@@ -1,9 +1,20 @@
 <template>
   <div id="overlay" @click="clickEvent">
       <div id="content" @click="stopEvent">
-        <div class="deleteLow">
-          <h1>Find Mask</h1>
+        <div class="contentLow">
+          <h1 class="contentLow__title">Find Mask</h1>
           <a class="delete is-medium" @click="clickEvent"></a>
+        </div>
+        <div class="contentLow__texts">
+          {{ texts }}
+        </div>
+        <div class="contentLow__icons">
+          <a href="http://find-mask.tokyo/" target=”_blank”>
+            <font-awesome-icon icon="link" />
+          </a>
+          <a href="https://github.com/naoya00/find-mask" target="_blank">
+            <font-awesome-icon :icon='["fab", "github"]' />
+          </a>
         </div>
       </div>
   </div>
@@ -11,6 +22,11 @@
 
 <script>
 export default {
+  data: function(){
+    return{
+      texts: '人類を救う、マスク在庫検索アプリです。最寄りの駅で、マスク在庫がある店舗を検索することができます。'
+    }
+  },
   methods :{
     clickEvent: function(){
       this.$emit('from-child')
@@ -41,8 +57,25 @@ export default {
   padding: 1em;
   background:#fff;
 }
-.deleteLow{
+.contentLow{
   display: flex;
   justify-content: space-between;
+  &__title{
+    font-size: 1.9em;
+    color: #808080;
+  }
+  &__texts{
+    margin: 30px 0;
+  }
+  &__icons{
+    font-size: 30px;
+    & .fa-link,.fa-github{
+      margin-right:30px;
+      color: #808080;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
 }
 </style>

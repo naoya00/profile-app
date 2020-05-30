@@ -22,7 +22,7 @@
 .footerLow{
   text-align: center;
   & .footerLink{
-     margin-right: 30px;
+    margin-right: 30px;
     text-decoration: none;
     font-size: 16px;
     color: #808080;
