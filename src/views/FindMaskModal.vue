@@ -1,7 +1,10 @@
 <template>
   <div id="overlay" @click="clickEvent">
       <div id="content" @click="stopEvent">
-        <a class="delete is-medium" @click="clickEvent"></a>
+        <div class="deleteLow">
+          <h1>Find Mask</h1>
+          <a class="delete is-medium" @click="clickEvent"></a>
+        </div>
       </div>
   </div>
 </template>
@@ -37,7 +40,9 @@ export default {
   width:50%;
   padding: 1em;
   background:#fff;
+}
+.deleteLow{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 </style>
