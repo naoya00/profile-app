@@ -1,7 +1,7 @@
 <template>
   <div class="productionLow">
     <h3>作ったもの</h3>
-    <a href="http://find-mask.tokyo/" target=”_blank”>
+    <a @click="openModal">
       <div class="productionLow__content">
         <img src="@/assets/findmask.jpg" />
         <div class="productionLow__content--texts">
@@ -35,8 +35,27 @@
         </div>
       </div>
     </a>
+    <FindMaskModal v-show="showContent" @from-child="closeModal"></FindMaskModal>
   </div>
 </template>
+
+<script>
+export default {
+  data: function(){
+  return{
+    showContent: false
+    }
+  },
+  methods:{
+    openModal: function(){
+      this.showContent = true
+    },
+    closeModal: function(){
+      this.showContent = false
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .productionLow{
