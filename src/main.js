@@ -15,7 +15,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.component('MainHeader', MainHeader)
 Vue.component('MainFooter', MainFooter)
-Vue.component('FindMaskModal', FindMaskModal)
+Vue.component('FindMaskModal',FindMaskModal)
 Vue.config.productionTip = false
 
 new Vue({

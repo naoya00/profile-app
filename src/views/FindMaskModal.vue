@@ -1,10 +1,9 @@
 <template>
-<div id="overlay" @click="clickEvent">
-    <div id="content" @click="stopEvent">
-      <p>これがモーダルウィンドウです。</p>
-      <button @click="clickEvent">Close</button>
-    </div>
-</div>
+  <div id="overlay" @click="clickEvent">
+      <div id="content" @click="stopEvent">
+        <a class="delete is-medium" @click="clickEvent"></a>
+      </div>
+  </div>
 </template>
 
 <script>
@@ -20,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #overlay{
   z-index:1;
   position:fixed;
@@ -38,5 +37,7 @@ export default {
   width:50%;
   padding: 1em;
   background:#fff;
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
