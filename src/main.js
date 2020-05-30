@@ -5,6 +5,7 @@ import MainHeader from './views/MainHeader.vue';
 import MainFooter from './views/MainFooter.vue';
 import FindMaskModal from './views/FindMaskModal.vue';
 import FurimaModal from './views/FurimaModal.vue';
+import ProfileModal from './views/ProfileModal.vue';
 
 // fontawsome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -21,6 +22,7 @@ Vue.component('MainHeader', MainHeader)
 Vue.component('MainFooter', MainFooter)
 Vue.component('FindMaskModal',FindMaskModal)
 Vue.component('FurimaModal',FurimaModal)
+Vue.component('ProfileModal',ProfileModal)
 Vue.config.productionTip = false
 
 new Vue({

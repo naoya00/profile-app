@@ -24,7 +24,7 @@
         </div>
       </div>
     </a>
-    <a href="#" target=”_blank”>
+    <a @click="profileOpenModal">
       <div class="productionLow__content">
         <img src="@/assets/portforio.jpg" />
         <div class="productionLow__content--texts">
