@@ -37,6 +37,7 @@
     </a>
     <FindMaskModal v-show="showContent" @from-child="closeModal"></FindMaskModal>
     <FurimaModal v-show="furimaShowContent" @FurimaFrom-child="furimaCloseModal"></FurimaModal>
+    <ProfileModal v-show="profileShowContent" @profileFrom-child="profileCloseModal"></ProfileModal>
   </div>
 </template>
 
@@ -45,7 +46,8 @@ export default {
   data: function(){
   return{
     showContent: false,
-    furimaShowContent: false
+    furimaShowContent: false,
+    profileShowContent: false
     }
   },
   methods:{
@@ -60,6 +62,12 @@ export default {
     },
     furimaCloseModal: function(){
       this.furimaShowContent = false
+    },
+    profileOpenModal: function(){
+      this.profileShowContent = true
+    },
+    profileCloseModal: function(){
+      this.profileShowContent = false
     }
   }
 }

@@ -2,7 +2,7 @@
   <div id="overlay" @click="clickEvent">
       <div id="content" @click="stopEvent">
         <div class="contentLow">
-          <h1 class="contentLow__title">Furima</h1>
+          <h1 class="contentLow__title">ProfileApp</h1>
           <a class="delete is-medium" @click="clickEvent"></a>
         </div>
         <div class="contentLow__texts">
@@ -32,7 +32,7 @@
 export default {
   methods :{
     clickEvent: function(){
-      this.$emit('FurimaFrom-child')
+      this.$emit('profileFrom-child')
     },
     stopEvent: function(){
       event.stopPropagation()
