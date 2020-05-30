@@ -67,6 +67,7 @@ export default {
   & h3{
     font-size: 2em;
     color: #808080;
+    margin-bottom: 20px
   }
   &__content{
     background-color:#eeeeee;

@@ -6,7 +6,11 @@
           <a class="delete is-medium" @click="clickEvent"></a>
         </div>
         <div class="contentLow__texts">
-          {{ texts }}
+          人類を救う、マスク在庫検索アプリです。最寄りの駅で、マスク在庫がある店舗を検索することができます。
+          <br>
+          インクリメンタルサーチなど、ユーザーがストレスを感じないように設計しました。
+          <br>
+          詳しくは下記のGithubのリンクからReadmeをご覧ください。
         </div>
         <div class="contentLow__icons">
           <a href="http://find-mask.tokyo/" target=”_blank”>
@@ -22,11 +26,6 @@
 
 <script>
 export default {
-  data: function(){
-    return{
-      texts: '人類を救う、マスク在庫検索アプリです。最寄りの駅で、マスク在庫がある店舗を検索することができます。'
-    }
-  },
   methods :{
     clickEvent: function(){
       this.$emit('from-child')
@@ -60,6 +59,7 @@ export default {
 .contentLow{
   display: flex;
   justify-content: space-between;
+  position: relative;
   &__title{
     font-size: 1.9em;
     color: #808080;
