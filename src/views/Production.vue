@@ -12,7 +12,7 @@
         </div>
       </div>
     </a>
-    <a href="http://54.64.42.195/" target=”_blank”>
+    <a @click="furimaOpenModal">
       <div class="productionLow__content">
         <img src="@/assets/furima.jpg" />
         <div class="productionLow__content--texts">
@@ -36,6 +36,7 @@
       </div>
     </a>
     <FindMaskModal v-show="showContent" @from-child="closeModal"></FindMaskModal>
+    <FurimaModal v-show="furimaShowContent" @FurimaFrom-child="furimaCloseModal"></FurimaModal>
   </div>
 </template>
 
@@ -43,7 +44,8 @@
 export default {
   data: function(){
   return{
-    showContent: false
+    showContent: false,
+    furimaShowContent: false
     }
   },
   methods:{
@@ -52,6 +54,12 @@ export default {
     },
     closeModal: function(){
       this.showContent = false
+    },
+    furimaOpenModal: function(){
+      this.furimaShowContent = true
+    },
+    furimaCloseModal: function(){
+      this.furimaShowContent = false
     }
   }
 }

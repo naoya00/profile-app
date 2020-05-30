@@ -4,6 +4,7 @@ import router from './router';
 import MainHeader from './views/MainHeader.vue';
 import MainFooter from './views/MainFooter.vue';
 import FindMaskModal from './views/FindMaskModal.vue';
+import FurimaModal from './views/FurimaModal.vue';
 
 // fontawsome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,6 +20,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component('MainHeader', MainHeader)
 Vue.component('MainFooter', MainFooter)
 Vue.component('FindMaskModal',FindMaskModal)
+Vue.component('FurimaModal',FurimaModal)
 Vue.config.productionTip = false
 
 new Vue({
