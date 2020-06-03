@@ -21,9 +21,17 @@
         </div>
         <img src="@/assets/portforio.jpg" />
       </div>
+      <div class="productionLow__content">
+        <div class="productionLow__content--explanation">
+          <p>美容室集計表アプリ</p>
+          <button class="button is-link is-inverted" @click="SpreadSheetOpenModal">詳しく見る</button>
+        </div>
+        <img src="@/assets/SpreadSheet.png" />
+      </div>
     <FindMaskModal v-show="showContent" @from-child="closeModal"></FindMaskModal>
     <FurimaModal v-show="furimaShowContent" @FurimaFrom-child="furimaCloseModal"></FurimaModal>
     <ProfileModal v-show="profileShowContent" @profileFrom-child="profileCloseModal"></ProfileModal>
+    <SpreadSheetModal v-show="SpreadSheetShowContent" @spreadsheetFrom-child="SpreadSheetCloseModal"></SpreadSheetModal>
   </div>
 </template>
 
@@ -33,7 +41,8 @@ export default {
   return{
     showContent: false,
     furimaShowContent: false,
-    profileShowContent: false
+    profileShowContent: false,
+    SpreadSheetShowContent: false
     }
   },
   methods:{
@@ -54,6 +63,12 @@ export default {
     },
     profileCloseModal: function(){
       this.profileShowContent = false
+    },
+    SpreadSheetOpenModal: function(){
+      this.SpreadSheetShowContent = true
+    },
+    SpreadSheetCloseModal: function(){
+      this.SpreadSheetShowContent = false
     }
   }
 }
